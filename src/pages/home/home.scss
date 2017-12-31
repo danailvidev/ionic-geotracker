@@ -1,3 +1,25 @@
-page-home {
-
+#map {
+    height: 100%;
+    width: 100%;
 }
+
+/*remove google map footer*/
+a[href^="http://maps.google.com/maps"]{display:none !important}
+  a[href^="https://maps.google.com/maps"]{display:none !important}
+  .gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+  }
+  .gmnoprint div {
+      background:none !important;
+  }
+  .gm-style-pbc {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .gm-style-pbt {
+    color: #fff!important;
+  }
+  #map {
+    border-radius:10px;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
